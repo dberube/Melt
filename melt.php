@@ -1,7 +1,7 @@
 <?php
 /*
  * Melt
- * version: 0.8.1 (10/05/2011)
+ * version: 0.8.2 (10/05/2011)
  *
  * Licensed under the MIT:
  *   http://www.opensource.org/licenses/mit-license.php
@@ -10,11 +10,11 @@
  *
  * Usage:
  *
- * <script type="text/javascript" src="<?/*=$this->melt(Array('public/js/jquery.js',
- * 														   'public/js/master.js',
- * 														   'public/js/site_edit_elements.js',
- *														   'public/js/jquery_ui.js'));?>">
- * </script>
+  <script type="text/javascript" src="<?/*=$this->melt(Array('public/js/jquery.js',
+ 															  'public/js/master.js',
+ 															  'public/js/site_edit_elements.js',
+ 															  'public/js/jquery_ui.js'));?>">
+  </script>
  *
  */
  															
@@ -22,11 +22,6 @@ class melt {
 	public	$files,
 			$extension,
 			$expire;
-
-	function __construct()
-    {
-        parent::__construct();	
-    }
 
 	public function melt() {
 		if (!$this->files) { return false; }
