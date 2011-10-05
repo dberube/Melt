@@ -1,0 +1,9 @@
+At MoFuse we use a lot of JavaScript, most modern web applications do. I hated that we were including sometimes more than 10 javascript files, this isn't good for performance and it certainly makes for messy code.
+
+I came across 37signals' Sprockets and I liked the idea -- but it was just for Ruby on Rails.
+
+So I developed Melt.
+
+The concept is the same, it takes as many javascript files as you want to include, combines them into one javascript file and that file is then cached for however long you want it to be.
+
+This can trim down network connections to just one and it keeps your code clean.
